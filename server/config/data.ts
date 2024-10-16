@@ -132,7 +132,7 @@ export const events: event[] = [
         Title: "Spikemuth Gym Challenge",
         Leader: "Piers",
         Order: 7,
-        Link: "https://www.serebii.net/pokearth/maps/galar/41-gym.jpg"
+        Link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6dtDBZf1hEDLB8jJglE3S1fl5ms9a7DxjRw&s"
     },
     {
         Id: 8,

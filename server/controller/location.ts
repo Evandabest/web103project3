@@ -1,4 +1,5 @@
 import { pool } from "../config/database";
+import { locations } from "../config/data";
 
 const getLocations = async (req: any, res: any) => {
     try {
@@ -10,10 +11,12 @@ const getLocations = async (req: any, res: any) => {
         } else {
             res.status(400).json({ error: 'An unknown error occurred' });
         }
-    }`x`
+    }
+    //res.status(200).json(locations)
 }
 
 const getLocationById =  async (req: any, res: any) => {
+    const locationId = req.params.locationId
     try {
         const locationId = req.params.locationId
         const selectQuery = `
@@ -30,6 +33,8 @@ const getLocationById =  async (req: any, res: any) => {
             res.status(400).json({ error: 'An unknown error occurred' });
         }
     }
+    //const location = locations.find(location => location.Id == locationId)
+    //res.status(200).json(location)
 }
 
 export default { getLocations, getLocationById }

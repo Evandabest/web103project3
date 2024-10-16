@@ -25,7 +25,7 @@ const Events = () => {
     }, [])
 
     return (
-        <div className='w-screen h-screen'>
+        <div className=''>
             {events? events.map((event) => 
             <>
                 <Eventcomponent Id={event.Id} Title={event.Title} Leader={event.Leader} BadgeNum={event.Order} Link={event.Link}/>
